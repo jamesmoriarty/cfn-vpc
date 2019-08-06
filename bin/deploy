@@ -1,0 +1,13 @@
+#/bin/sh
+
+set -e
+set -u
+set -x
+
+aws cloudformation deploy \
+  --no-fail-on-empty-changeset \
+  --region ap-southeast-2 \
+  --template-file cfn/stack.yml \
+  --stack-name $STACK_NAME \
+  --parameter-overrides \
+    EnvironmentName=$ENVIRONMENT_NAME
