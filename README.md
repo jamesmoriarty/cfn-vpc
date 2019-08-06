@@ -2,6 +2,8 @@
 
 [![build status][1]][2]
 
+A simple VPC including public and private subnets over multiple AZs.
+
 ## Deploy
 
 ```
